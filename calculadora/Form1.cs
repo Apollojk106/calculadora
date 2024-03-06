@@ -130,13 +130,13 @@ namespace calculadora
                     Resultado = Convert.ToDecimal(textResultado.Text) + Valor;
                     break;
                 case Operacao.Subtracao:
-                    Resultado = Convert.ToDecimal(textResultado.Text) - Valor;
+                    Resultado = Valor - Convert.ToDecimal(textResultado.Text);
                     break;
                 case Operacao.Multiplicacao:
                     Resultado = Convert.ToDecimal(textResultado.Text) * Valor;
                     break;
                 case Operacao.Divisao:
-                    Resultado = Convert.ToDecimal(textResultado.Text) / Valor;
+                    Resultado = Valor / Convert.ToDecimal(textResultado.Text);
                     break;
             }
             textResultado.Text = Convert.ToString(Resultado);
